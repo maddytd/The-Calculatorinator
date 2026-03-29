@@ -42,7 +42,7 @@ functionalities of addition, subtraction, multiplication, division, modulus, and
 should be able to run on any input and tell the user what errors occur. The project should include a user-
 friendly graphical interface and intuitive use.  
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/maddytd/The-Calculatorinator/tree/main/Documents"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/github_username/repo_name">View Demo</a>
