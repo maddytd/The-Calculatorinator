@@ -29,13 +29,13 @@
 
 <h3 align="center">The Calculatorinator</h3>
 
-  <!-- <p align="center">
+  <p align="center">
     This is the repository for the Caculatorinator, a C++ based mathematical expression evaluator. In this repository you can find 
     all of the specifications for the project, the program itself, and examples on how this program is to be used.
     <br />
     <a href="https://github.com/maddytd/The-Calculatorinator/tree/main/Documents"><strong>Explore the docs »</strong></a>
     <br />
-    <br />
+    <!-- <br />
     <a href="https://github.com/github_username/repo_name">View Demo</a>
     &middot;
     <a href="https://github.com/github_username/repo_name/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
