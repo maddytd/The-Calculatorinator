@@ -145,3 +145,13 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
 
 
+## The Team
+
+| Team Member       | Role(s)                   | Availability                                                                |
+| --------------    | ------------------------- | --------------------------------------------------------------------------- |
+| Vu Nguyen         | Project leader, Developer | M/W/F 11:10AM-1:00PM</br>M/T/W/Th/F 3:30PM-9:00PM                           |
+| Micah Lehman      | Developer                 | M/F 2:00PM-10PM                                                             |
+| Joseph Ubanda-Ruiz| Developer                 | M/F 1:00PM-5:00PM                                                           |
+| La`Nale Garry     | Developer                 | M/T/W/Th/F 5:00PM-12:00AM                                                   |
+| Tram Dinh         | Developer                 | M/W 5:00PM-9:00PM<br/>T/Th 6:00PM-9:00PM<br/>F 8:00AM-11:00AM               |
+| Maddy Dang        | Developer                 | M/W/F 11:00AM-1:00PM                                                        |
