@@ -29,7 +29,7 @@
 
 <h3 align="center">The Calculatorinator</h3>
 
-  <p align="center">
+  <!-- <p align="center">
     This is the repository for the Caculatorinator, a C++ based mathematical expression evaluator. In this repository you can find 
     all of the specifications for the project, the program itself, and examples on how this program is to be used.
     <br />
@@ -41,7 +41,7 @@
     <a href="https://github.com/github_username/repo_name/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     &middot;
     <a href="https://github.com/github_username/repo_name/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
-  </p>
+  </p> -->
 </div>
 
 
@@ -133,16 +133,6 @@ Use this space to show useful examples of how a project can be used. Additional 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
 
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
 
 
 ## The Team
