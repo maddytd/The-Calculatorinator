@@ -143,5 +143,5 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 | Micah Lehman      | Developer                 | M/F 10:00AM-2PM                                                             |
 | Joseph Ubanda-Ruiz| Developer                 | M/F 1:00PM-5:00PM                                                           |
 | La`Nale Garry     | Developer                 | M/T/W/Th/F 5:00PM-12:00AM                                                   |
-| Tram Dinh         | Developer                 |                                                                             |
+| Tram Dinh         | Developer                 | M/W 11:00AM-2:00PM</br>T/Th 10:00AM-2:00PM                                  |
 | Maddy Dang        | Developer                 | M/W/F 11:00AM-1:00PM                                                        |
