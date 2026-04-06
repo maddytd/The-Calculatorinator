@@ -52,9 +52,6 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -66,9 +63,7 @@
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+
   </ol>
 </details>
 
@@ -131,8 +126,8 @@ This is an example of how to list things you need to use the software and how to
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 
-For more examples, please refer to the <a href="https://github.com/maddytd/The-Calculatorinator/tree/main/Documents"><strong>Documentation »</strong></a>
-_For more examples, please refer to the [Documentation]()_
+For more examples, please refer to the <a href="https://github.com/maddytd/The-Calculatorinator/tree/main/Documents"><strong>Documentation</strong></a>
+
 
 
 
