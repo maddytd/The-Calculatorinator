@@ -53,16 +53,16 @@
     <li>
       <a href="#about-the-project">About The Project</a>
     </li>
-    <li>
+    <!-- <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
-    </li>
+    </li> -->
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+    <!-- <li><a href="#roadmap">Roadmap</a></li> -->
+    
 
   </ol>
 </details>
@@ -123,7 +123,10 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Currently, This project only contains documents that describe the process that will be followed to implement the program. 
+The Documents folder contains information about the implementation plan and other specifics about the project.
+This project contains weekly meetings where the main discussion points are held in the Meeting logs folder.
+
 
 
 For more examples, please refer to the <a href="https://github.com/maddytd/The-Calculatorinator/tree/main/Documents"><strong>Documentation</strong></a>
