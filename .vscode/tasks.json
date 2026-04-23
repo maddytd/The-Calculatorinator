@@ -7,7 +7,7 @@
       "command": "cmd",
       "args": [
         "/c",
-        "gcc \"${file}\" -o \"${fileDirname}\\${fileBasenameNoExtension}\" && \"${fileDirname}\\${fileBasenameNoExtension}\""
+        "g++ \"${file}\" -o \"${fileDirname}\\${fileBasenameNoExtension}\" && \"${fileDirname}\\${fileBasenameNoExtension}\""
       ],
       "group": {
         "kind": "build",
