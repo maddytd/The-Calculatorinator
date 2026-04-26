@@ -20,7 +20,8 @@ int priority(char op) // figure the priority of the operation via order of opera
         case '%': return 2;
 
         case '^': return 3;
-        case '(': return 3;
+        case '~': return 4; // Unary minus
+        default: return 0;
     }
 }
 
@@ -38,10 +39,30 @@ double operate(double a, double b, char op) // function for returning an operati
     }
 }
 
+void processTopElements(stack<double>& values, stack<char>& operators) {
+    if (operators.empty()) return;
+    
+    char op = operators.top();
+    operators.pop();
+
+    if (op == '~') {
+        double val = values.top();
+        values.pop();
+        values.push(-val);
+    } else {
+        double val2 = values.top(); values.pop();
+        double val1 = values.top(); values.pop();
+        values.push(operate(val1, val2, op));
+    }
+}
+
 double evaluate(string input) {
     // Create two stacks for the values and operators
     stack<double> values;
     stack<char> operators;
+
+    // Toggle if a operator could be a Unary operator
+    bool expecting_operand = true; // At the start ex. -5-8
 
     for (int i = 0; i < input.length(); i++) {
         // If it's a number, parse the full value (e.i. decimal value or values larger than two digits)
@@ -53,43 +74,48 @@ double evaluate(string input) {
             // Convert string to double and push to values stack
             values.push(stod(valStr));
             i--; // Adjust for the outer loop increment
+            expecting_operand = false;
         } 
         // If it's a '(', push to operator stack
         else if (input[i] == '(') {
             operators.push(input[i]);
+            expecting_operand = true; // After '(' ex. 2+(-3-4)
         } 
         // If it's a ')', iterate until you find the '(' 
         else if (input[i] == ')') {
             while (!operators.empty() && operators.top() != '(') {
-                double val2 = values.top(); values.pop();
-                double val1 = values.top(); values.pop();
-                char op = operators.top(); operators.pop();
-                values.push(operate(val1, val2, op));
+                processTopElements(values, operators);
             }
             if (!operators.empty()) operators.pop(); // Remove '('
+            expecting_operand = false;
         } 
         else {
-            // It's a Operator 
-            while (!operators.empty() && priority(operators.top()) >= priority(input[i])) {
-                double val2 = values.top(); values.pop();
-                double val1 = values.top(); values.pop();
-                char op = operators.top(); operators.pop();
-                values.push(operate(val1, val2, op));
+            char currentOp = input[i];
+
+            if (expecting_operand) {
+                if (currentOp == '-') {
+                    operators.push('~'); // Unary Minus
+                } else if (currentOp == '+') {
+                    // ignore +val is just val
+                }
+            } else {
+                // Binary Operator logic
+                while (!operators.empty() && operators.top() != '(' && priority(operators.top()) >= priority(currentOp)) {
+                    processTopElements(values, operators);
+                }
+                operators.push(currentOp);
             }
-            operators.push(input[i]);
+            expecting_operand = true; 
         }
     }
 
     // Process remaining operators
     while (!operators.empty()) {
-        double val2 = values.top(); values.pop();
-        double val1 = values.top(); values.pop();
-        char op = operators.top(); operators.pop();
-        values.push(operate(val1, val2, op));
+        processTopElements(values, operators);
     }
 
     return values.top();
-} 
+}
 
 std::ostream& bold_on(std::ostream& os) // creates macro for turning on and off bold
 {
