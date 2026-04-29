@@ -80,6 +80,16 @@ double evaluate(string input) {
             while (i < input.length() && (isdigit(input[i]) || input[i] == '.')) {
                 valStr += input[i++];
             }
+            
+            // Check for multiple dots in the value (ex. 25.05.8)
+            int dotCount = 0;
+            for (char c : valStr) {
+                if (c == '.') dotCount++;
+            }
+            if (dotCount > 1) {
+                throw invalid_argument("Invalid float value.");
+            }
+
             // Convert string to double and push to values stack
             values.push(stod(valStr));
             i--; // Adjust for the outer loop increment
