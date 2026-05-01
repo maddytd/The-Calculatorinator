@@ -33,15 +33,15 @@ int main()
     
     // input is now a string of the operations. String is INDEXABLE and ITERABLE.
     
-    size_t pos;
-    // Change '**' to '^' for the operate() function
-    while ((pos = input.find("**")) != string::npos) {
-        input.replace(pos, 2, "^");
-    }
-
     // Run evaluation and output result
     try {
         validateInput(input);
+
+        size_t pos;
+        // Change '**' to '^' for the operate() function
+        while ((pos = input.find("**")) != string::npos) {
+            input.replace(pos, 2, "^");
+        }
 
         double result = evaluate(input);
         cout << "Final Result: " << result << endl;
