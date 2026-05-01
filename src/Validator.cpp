@@ -67,13 +67,18 @@ void validateInput(const string& input)
             throw invalid_argument("Missing operator before parenthesis.");
         }
 
-        // two operators in a row (allow ** for power and - for unary minus)
+        // two operators in a row (allow ** for power and -/+ for unary minus/plus)
         if (i > 0 && isOperator(c) && isOperator(input[i - 1])) {
             bool isValidSequence = (c == '*' && input[i - 1] == '*') ||  // ** is allowed
-                                   (c == '-');  // - after any operator is allowed (unary minus)
+                                   (c == '-' || c == '+');  // - or + after any operator is allowed (unary minus/plus)
             if (!isValidSequence) {
                 throw invalid_argument("Invalid operator sequence.");
             }
+        }
+
+        // operator after opening parenthesis (only unary -/+ allowed)
+        if (isOperator(c) && lastChar == '(' && !(c == '-' || c == '+')) {
+            throw invalid_argument("Operator cannot follow opening parenthesis.");
         }
 
         lastChar = c; // Same pervious character
