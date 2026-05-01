@@ -33,16 +33,12 @@ void validateInput(const string& input)
             throw invalid_argument("Invalid character found.");
         }
 
-        // Check for trailing dot (e.g., "5." instead of "5.0")
-        if (c == '.' && i + 1 < input.length()) {
-            char nextChar = input[i + 1];
-            if (!isdigit(nextChar)) {
+        if (c == '.') {
+            // Dot must be surrounded by digits (e.g. "3.14"), not ".5" or "5."
+            if (i == 0 || !isdigit(input[i - 1]) ||
+                i + 1 >= input.length() || !isdigit(input[i + 1])) {
                 throw invalid_argument("Invalid float value.");
             }
-        }
-        // Check for dot at the end of input
-        if (c == '.' && i + 1 == input.length()) {
-            throw invalid_argument("Invalid float value.");
         }
 
         if (c == '(') balance++;
