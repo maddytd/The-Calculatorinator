@@ -42,7 +42,7 @@ double operate(double a, double b, char op) // function for returning an operati
                 throw invalid_argument("Modulo by zero. ");
             }
             
-            return fmod(a, b);
+            return a - floor(a / b) * b;
         default: return 0;
 
     }
