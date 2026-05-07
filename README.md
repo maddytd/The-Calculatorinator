@@ -129,7 +129,7 @@ This project contains weekly meetings where the main discussion points are held 
 
 
 
-For more examples, please refer to the <a href="https://github.com/maddytd/The-Calculatorinator/tree/main/Documents"><strong>Documentation</strong></a>
+For more examples, please refer to the <a href="https://github.com/maddytd/The-Calculatorinator/blob/main/Documents/06-Users-Manual.docx.pdf"><strong>User's Manual</strong></a> or the <a href="https://github.com/maddytd/The-Calculatorinator/blob/main/Documents/05-Test-Cases.docx.pdf"><strong>Test Case</strong></a> document.
 
 
 
