@@ -57,7 +57,10 @@ void processTopElements(stack<double>& values, stack<char>& operators) {
     if (op == '~') {
         double val = values.top();
         values.pop();
-        values.push(-val);
+        if (val == 0) values.push(val); // -0 is just 0
+        else{
+            values.push(-val);
+        }
     } else {
         double val2 = values.top(); values.pop();
         double val1 = values.top(); values.pop();
