@@ -123,13 +123,9 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Currently, This project only contains documents that describe the process that will be followed to implement the program. 
 The Documents folder contains information about the implementation plan and other specifics about the project.
 This project contains weekly meetings where the main discussion points are held in the Meeting logs folder.
-
-
-
-For more examples, please refer to the <a href="https://github.com/maddytd/The-Calculatorinator/blob/main/Documents/06-Users-Manual.docx.pdf"><strong>User's Manual</strong></a> or the <a href="https://github.com/maddytd/The-Calculatorinator/blob/main/Documents/05-Test-Cases.docx.pdf"><strong>Test Case</strong></a> document.
+Follow the information in the <a href="https://github.com/maddytd/The-Calculatorinator/blob/main/Documents/06-Users-Manual.docx.pdf"><strong>User's Manual</strong></a> or the <a href="https://github.com/maddytd/The-Calculatorinator/blob/main/Documents/05-Test-Cases.docx.pdf"><strong>Test Case</strong></a> document for how to use this project.
 
 
 
